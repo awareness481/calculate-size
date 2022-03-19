@@ -7,7 +7,6 @@ fn main() -> std::io::Result<()> {
     let bytes_vec = std::fs::read(filename)?;
     let bytes = bytes_vec.len() as u128;
 
-    dbg!(&bytes);
     println!("{}", calculate_size(bytes));
     Ok(())
 }
